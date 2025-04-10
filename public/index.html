@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Search App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌤️ Weather and Time Explorer </h1>
+
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+  <button onclick="getWeather()">Search</button>
+  <button onclick="toggleHistory()">📜 View History</button>
+  <button onclick="deleteAllHistory()">🧹 Delete All</button>
+  <button onclick="window.location.href='/export'">📥 Export to Excel</button>
+
+  <div id="result"></div>
+
+  <div id="historySection" style="display: none;">
+    <h2>History</h2>
+    <div id="history"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
